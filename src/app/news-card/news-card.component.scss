@@ -1,0 +1,59 @@
+ion-card {
+    margin: 10px;
+  }
+  
+  ion-card-header {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  
+  ion-row {
+    ion-col {
+      padding: 10px;
+    }
+  
+    .news-image {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+    }
+  
+    .news-content {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+  
+  @media screen and (min-width: 992px) {
+    ion-row {
+      ion-col {
+        width: 50%;
+      }
+    }
+  }
+  
+  @media screen and (min-width: 768px) and (max-width: 991px) {
+    ion-row {
+      ion-col {
+        width: 50%;
+      }
+    }
+  }
+  
+  @media screen and (max-width: 767px) {
+    ion-row {
+      ion-col {
+        width: 100%;
+      }
+  
+      .news-image {
+        max-height: 200px;
+        height: 100%;
+      }
+  
+      .news-content {
+        flex-grow: 1;
+      }
+    }
+  }

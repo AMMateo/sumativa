@@ -1,0 +1,8 @@
+<ion-content>
+  <app-news-card
+    *ngFor="let news of newsList"
+    [title]="news.title"
+    [description]="news.description"
+    [image]="news.image"
+  ></app-news-card>
+</ion-content>
